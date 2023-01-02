@@ -1,0 +1,19 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet', href='https://unpkg.com/mvp.css')
+  title Document
+header
+  h1 SING IN 
+main
+  form(action='/loginCheck', method='POST')
+    div 
+        p ID
+        input#id(type='text', name='id')
+    div 
+        p Password
+        input#pw(type='password', name='pw', onkeydown='login(event)')
+    input(type='submit', value='sign in')
+  button#signUp(onclick="") 회원가입

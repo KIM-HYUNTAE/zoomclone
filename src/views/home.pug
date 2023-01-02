@@ -1,0 +1,22 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title ToGather
+  link(rel='stylesheet', href='https://unpkg.com/mvp.css')
+header
+  h1 To Gather
+main
+  h2 Welcome to LIVE CHAT
+  input#c_text(type='text', onkeydown='transmission(event)')
+  button#s_btn 전송
+  #m_con
+script(src='/public/js/app.js')
+//- script.
+//-   function transmission(){
+//-   if (event.key === 'Enter' && document.getElementById("c_text").value!="") {
+//-   event.preventDefault();
+//-   document.getElementById("s_btn").click();
+//-   }
+//-   }
